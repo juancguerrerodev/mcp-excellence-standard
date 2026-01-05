@@ -30,7 +30,7 @@ This standard defines **best practices across 12 critical dimensions** to create
 | File | Description |
 |------|-------------|
 | [MCP_EXCELLENCE_STANDARD.md](./MCP_EXCELLENCE_STANDARD.md) | The complete standard with detailed patterns and anti-patterns |
-| [skills/mcp-excellence.md](./skills/mcp-excellence.md) | Claude skill for building standard-compliant MCPs |
+| [skills/mcp-excellence/](./skills/mcp-excellence/) | Claude skill for building standard-compliant MCPs (Anthropic format) |
 | [checklists/compliance-checklist.md](./checklists/compliance-checklist.md) | Quick evaluation checklist for any MCP |
 
 ---
@@ -125,7 +125,22 @@ Use the [compliance checklist](./checklists/compliance-checklist.md) to evaluate
 
 ## 🛠️ Using the Claude Skill
 
-The included [Claude skill](./skills/mcp-excellence.md) teaches Claude to build MCPs that follow this standard. Add it to your Claude configuration to generate compliant MCPs from any API.
+The included [Claude skill](./skills/mcp-excellence/) follows **Anthropic's official skill format** with proper YAML frontmatter and progressive disclosure. 
+
+### Skill Structure
+```
+skills/mcp-excellence/
+├── SKILL.md              # Main skill file with YAML frontmatter
+└── references/
+    ├── patterns.md       # Detailed implementation patterns
+    └── platforms.md      # Platform-specific requirements
+```
+
+### Installation
+
+**Claude Code:** Copy `skills/mcp-excellence/` to `~/.claude/skills/`
+
+**Claude.ai:** Zip the folder and upload via Settings > Features
 
 ### Key Features:
 - Automatic context window optimization
