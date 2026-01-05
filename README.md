@@ -160,15 +160,57 @@ skills/mcp-excellence/
 
 ### Building a New MCP
 
-1. Add the [Claude skill](./skills/mcp-excellence.md) to your Claude configuration
-2. Provide your API documentation
-3. Claude will generate a standard-compliant MCP
+1. Install the skill (see Installation above)
+2. Ask Claude: *"Create an MCP for [API name] following the MCP Excellence Standard"*
+3. Provide your API documentation
+4. Claude will generate a standard-compliant MCP
 
 ### Upgrading an Existing MCP
 
-1. Review your current implementation against the standard
-2. Prioritize: Context Window → Safety → Operations → Rest
-3. Implement changes incrementally
+1. Install the skill
+2. Ask Claude: *"Review this MCP and improve it following the MCP Excellence Standard"*
+3. Share your existing MCP code
+4. Claude will identify gaps and implement improvements
+
+---
+
+## 💡 Pro Tips
+
+> **The skill works for both creating NEW MCPs and IMPROVING existing ones!**
+
+### Example Prompts
+
+**Create a new MCP:**
+```
+"Create a Gmail MCP following the MCP Excellence Standard with 
+context window optimization and batch operations"
+```
+
+**Improve an existing MCP:**
+```
+"Review this MCP code and enhance it following the MCP Excellence 
+Standard. Add returnOnlyIds, compact mode, and search_and_action."
+```
+
+**Audit an MCP:**
+```
+"Score this MCP against the MCP Excellence Standard compliance 
+checklist and tell me what's missing."
+```
+
+**Add specific features:**
+```
+"Add context window optimization to this MCP - I need returnOnlyIds,
+compact mode, and count operations."
+```
+
+### When to Use Each Resource
+
+| Resource | Use For |
+|----------|--------|
+| **Skill** | Let Claude auto-apply best practices while coding |
+| **Standard** | Deep reference for understanding the "why" |
+| **Checklist** | Quick audit of any MCP (yours or third-party) |
 
 ---
 
