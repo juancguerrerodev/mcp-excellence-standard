@@ -270,7 +270,7 @@ MIT License - See [LICENSE](./LICENSE) for details.
 - 🐦 [@JuanCGuerreroE](https://twitter.com/JuanCGuerreroE)
 - 💼 [GitHub](https://github.com/juancguerrerodev)
 
-Founder of [Blockchain Jungle](https://blockchainJungle.com) | Co-founder of [Dojo Coding](https://dojocoding.io) & [All Time High](https://alltimehigh.education)
+Founder of [Blockchain Jungle](https://blockchainJungle.xyz) | Co-founder of [Dojo Coding](https://dojocoding.io) & [All Time High](https://alltimehigh.academy)
 
 ---
 
